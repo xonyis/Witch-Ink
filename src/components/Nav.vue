@@ -20,18 +20,18 @@ export default {
        <ul>
         <li class="nav-links"><a href="">Accueil</a></li>
         <li class="nav-links"><a href="">Gallerie</a></li>
-        <li class="nav-links shop-name"><a href="#">Witch Ink Tatoo</a></li>
+        <li class="nav-links shop-name"><a href="#">Witch Ink Tattoo</a></li>
         <li class="nav-links"><a href="">A propos</a></li>
         <li class="nav-links"><a href="">Contact</a></li>
        </ul>
     </nav>
-    <Toggle :mode="mode" @toggle="$emit('toggle')" class="tgl-btn"/>
+
 </template>
 
 
 <style scoped>
 nav {
-    
+    overflow: auto;
 }
 
 nav ul{
@@ -60,8 +60,9 @@ a{
     font-size: 25px;
 }
 
-.shop-name {
+.shop-name a{
     font-size: 50px;
+    cursor: default;
 }
 
 .tgl-btn{

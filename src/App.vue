@@ -28,8 +28,10 @@ export default {
 
 <template>
   <div class="app" :class="(mode === 'dark' ? 'dark' : '')">
-    <Nav :mode="mode" @toggle="toggle"></Nav>
-    <Headers></Headers>
+    
+    <Nav ></Nav>
+    
+    <Headers :mode="mode" @toggle="toggle"></Headers>
   </div>
 </template>
 
