@@ -16,7 +16,6 @@ export default {
        <div class="nav-link">A propos</div>
        <div class="nav-link">Contact</div>
        <Toggle :mode="mode" @toggle="$emit('toggle')"/>
-
     </nav>
 </template>
 

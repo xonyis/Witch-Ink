@@ -16,15 +16,16 @@ export default {
     </div>
 </template>
 <style>
+
 .toogle {
     position: relative;
-    display: inline-block;
-    width: 4.5em;
-    height: 2em;
+    display: flex;
+    width: 3.5em;
+    height: 3.5em;
+    justify-content: center;
 }
 
 .toogle input {
-    
     opacity: 0;
     width: 0;
     height: 0;
@@ -37,11 +38,15 @@ export default {
     left: 0;
     bottom: 0;
     right: 0;
-    background: var(--black-soft);
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 
+.dark {
+  background: var(--black-soft);
+  color: var(--white-soft);
+}
+/* 
 .toggler::before {
     position: absolute;
     content: "";
@@ -66,16 +71,25 @@ input:checked + .toggler::before {
     -webkit-transform: translateX(30px);
     -ms-transform: translateX(34px);
     transform: translateX(34px);
-}
+} */
 
 .toggler.round {
-    border-radius: 25px;
     display: flex;
     align-items: center;
+    background-image: url('../assets/svg/dark_mode.svg');
+    background-repeat: no-repeat;
 }
 
-.toggler.round:before {
-    border-radius: 50%;
+input:checked + .toggler.round {
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url('../assets/svg/light_mode.svg');
+
 }
+
+/* .toggler.round:before {
+    border-radius: 50%;
+} */
 
 </style>

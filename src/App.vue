@@ -1,5 +1,7 @@
 <script>
 import Nav from './components/Nav.vue';
+import Headers from './components/HeaderComponent.vue'
+
 export default {
   name: 'app',
   data () {
@@ -8,7 +10,8 @@ export default {
     }
   },
   components: {
-    Nav
+    Nav,
+    Headers
   },
 
   methods: {
@@ -26,6 +29,7 @@ export default {
 <template>
   <div class="app" :class="(mode === 'dark' ? 'dark' : '')">
     <Nav :mode="mode" @toggle="toggle"></Nav>
+    <Headers></Headers>
   </div>
 </template>
 
@@ -40,7 +44,7 @@ export default {
   width: 100vw;
   height: 100vh;
   background: var(--white-soft);
-  transition: background 0.3s ease-in-out;
+  transition: background 0.7s ease-in-out;
 }
 
 .dark {
