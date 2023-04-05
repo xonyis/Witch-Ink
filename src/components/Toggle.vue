@@ -46,7 +46,9 @@ export default {
   background: var(--black-soft);
   color: var(--white-soft);
 }
-/* 
+
+
+/* TOOGLE SWITCH  
 .toggler::before {
     position: absolute;
     content: "";
