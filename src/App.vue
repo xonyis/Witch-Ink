@@ -11,7 +11,7 @@ export default {
   },
   components: {
     Nav,
-    Headers
+    Headers,
   },
 
   methods: {
@@ -29,8 +29,7 @@ export default {
 <template>
   <div class="app" :class="(mode === 'dark' ? 'dark' : '')">
     
-    <Nav ></Nav>
-    
+    <Nav></Nav>
     <Headers :mode="mode" @toggle="toggle"></Headers>
   </div>
 </template>

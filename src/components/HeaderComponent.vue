@@ -11,10 +11,8 @@ export default {
             <p>Salon de tatouage à Metz 
            <br> <span class="sp-witch">Witch Ink Tattoo</span></p>
         </div>
-        <div>
-            <img src="../assets/339172020_552967780040161_7814666685136169326_n.jpeg" alt="">
-            
-
+        <div  >
+            <img class="main-photo" src="../assets/img/339172020_552967780040161_7814666685136169326_n.jpeg" alt="">
         </div>
     </header>
     <div id="mybutton">
@@ -34,23 +32,23 @@ p{
 
 header {
     width: 100%;
-    height: 95vh;
+    height: 90vh;
     padding: 2em;
     display: flex;
 }
 
 header div {
     /* border: 1px solid; */
-    height: 95vh;
+    height: 100%;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-img {
-    height: 30em;
-    width: 30em;
+.main-photo {
+    height: auto;
+    width: 80%;
     border-radius: 50%;
 }
 
@@ -62,8 +60,8 @@ img {
 
 #mybutton {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 1em;
+  right: 0em;
 }
 
 </style>
