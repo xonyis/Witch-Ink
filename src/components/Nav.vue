@@ -1,5 +1,8 @@
 <script>
 import Toggle from './Toggle.vue';
+import { ref, onMounted } from "vue";
+import gsap from "gsap";
+
 export default {
     props: ["mode"],
     components: { Toggle }
@@ -25,9 +28,7 @@ export default {
 nav {
     overflow: auto;
 }
-.dark a {
-    color: var(--white-soft);
-}
+
 
 nav ul{
     display: flex;
@@ -58,12 +59,12 @@ nav ul{
 
 a {
   position: relative;
-  color: #000;
+  color: var(--black-soft);
   text-decoration: none;
 }
 
 a:hover {
-  color: #000;
+  color: var(--black-soft);
 }
 
 a::before {
@@ -74,13 +75,23 @@ a::before {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: var(--black-soft);
   transform: scaleX(0);
   transition: transform 0.4s ease;
 }
 
 a:hover::before {
   transform: scaleX(1);
+}
+
+.dark a {
+    color: var(--white-soft);
+}
+
+.dark a::before {
+
+  background-color: var(--white-soft);
+
 }
 
 </style>

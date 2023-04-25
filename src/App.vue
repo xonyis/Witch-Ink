@@ -1,6 +1,7 @@
 <script>
 import Nav from './components/Nav.vue';
 import Headers from './components/HeaderComponent.vue'
+import About from './components/AboutComponent.vue'
 
 export default {
   name: 'app',
@@ -12,6 +13,7 @@ export default {
   components: {
     Nav,
     Headers,
+    About,
   },
 
   methods: {
@@ -31,6 +33,7 @@ export default {
     
     <Nav></Nav>
     <Headers :mode="mode" @toggle="toggle"></Headers>
+    <About></About>
   </div>
 </template>
 

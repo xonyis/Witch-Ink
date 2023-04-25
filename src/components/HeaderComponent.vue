@@ -8,8 +8,8 @@ export default {
 <template>
     <header>
         <div>
-            <p>Salon de tatouage à Metz 
-           <br> <span class="sp-witch">Witch Ink Tattoo</span></p>
+            <p><span class="sp-witch">Witch Ink Tattoo</span>
+           <br>Salon de tatouage à Metz  </p>
         </div>
         <div  >
             <img class="main-photo" src="../assets/img/339172020_552967780040161_7814666685136169326_n.jpeg" alt="">
