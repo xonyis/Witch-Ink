@@ -1,5 +1,22 @@
 @import './base.css';
-
 body {
     background: var(--white-soft);
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(211, 211, 211, 0.281);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.486);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    /* creates padding around scroll thumb */
 }

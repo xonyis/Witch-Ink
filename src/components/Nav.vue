@@ -1,7 +1,6 @@
 <script>
 import Toggle from './Toggle.vue';
-import { ref, onMounted } from "vue";
-import gsap from "gsap";
+
 
 export default {
     props: ["mode"],
@@ -25,9 +24,6 @@ export default {
 
 
 <style scoped>
-nav {
-    overflow: auto;
-}
 
 
 nav ul{
@@ -72,7 +68,7 @@ a::before {
   position: absolute;
   display: block;
   width: 100%;
-  height: 1px;
+  height: 1.15px;
   bottom: 0;
   left: 0;
   background-color: var(--black-soft);

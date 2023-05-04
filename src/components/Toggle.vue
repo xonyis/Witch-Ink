@@ -2,6 +2,7 @@
 export default {
     props: ['mode']
 }
+
 </script>
 <template>
     <div class="toogle-warpper">

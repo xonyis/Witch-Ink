@@ -1,7 +1,8 @@
 <script>
 import Nav from './components/Nav.vue';
 import Headers from './components/HeaderComponent.vue'
-import About from './components/AboutComponent.vue'
+import ButtonJN from './components/ButtonJN.vue'
+import Prestation from './components/Prestation.vue'
 
 export default {
   name: 'app',
@@ -13,13 +14,14 @@ export default {
   components: {
     Nav,
     Headers,
-    About,
+    ButtonJN,
+    Prestation
   },
 
   methods: {
-    toggle () {
+    toggle() {
       if (this.mode === "dark") {
-        this.mode = 'light'
+        this.mode = ''
       } else {
         this.mode ='dark'
       }
@@ -29,11 +31,12 @@ export default {
 </script>
 
 <template>
-  <div class="app" :class="(mode === 'dark' ? 'dark' : '')">
+  <div class="app " :class="(mode === 'dark' ? 'dark' : '')">
     
     <Nav></Nav>
-    <Headers :mode="mode" @toggle="toggle"></Headers>
-    <About></About>
+    <Headers></Headers>
+    <Prestation></Prestation>
+    
   </div>
 </template>
 
@@ -46,13 +49,13 @@ export default {
 
 .app {
   width: 100vw;
-  height: 100vh;
+  height: max-content;
   background: var(--white-soft);
-  transition: background 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 
 .dark {
-  background: var(--black-soft);
+  background-color: var(--black-soft);
   color: var(--white-soft);
 }
 
