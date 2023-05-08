@@ -7,17 +7,30 @@ export default {
 </script>
 <template>
     <header>
-        <div>
-            <p><span class="sp-witch">Witch Ink Tattoo</span>
-           <br>Salon de tatouage à Metz  </p>
+        <div class="header-warper">
+            <div>
+                <p><span class="sp-witch">Witch Ink Tattoo</span>
+                <br>Salon de tatouage à Metz  </p>
+            </div>
+            <div  >
+                <img class="main-photo" src="../assets/img/339172020_552967780040161_7814666685136169326_n.jpeg" alt="">
+            </div>
         </div>
-        <div  >
-            <img class="main-photo" src="../assets/img/339172020_552967780040161_7814666685136169326_n.jpeg" alt="">
+
+        <div class="presentation-warper">
+            <h3>Witch Ink Tatto</h3>
+            <p>Bienvenue chez Witch Ink Tattoo, shop tattoo situé dans Metz centre.
+                <br><br>
+                fait un back ground img <br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         </div>
-    </header>
+    </header> 
 </template>
 <style>
-p{
+
+
+.header-warper p{
     font-size: 3.5em;
     font-family: 'Ageya';
     line-height: 2em;
@@ -27,15 +40,14 @@ p{
     font-size: 1.5em;
 }
 
-header {
+.header-warper {
+    width: 100%;
     display: flex;
 }
 
 header div {
     /* border: 1px solid; */
-    margin-top: 5em;
-    margin-bottom: 5em;
-
+    margin-top: 2em;
     height: auto;
     width: 50%;
     display: flex;
@@ -47,6 +59,34 @@ header div {
     height: auto;
     width: 80%;
     border-radius: 50%;
+}
+
+.presentation-warper {
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    padding: 3.5em 1em;
+    /* background-image: url('../assets/img/presentation-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.presentation-warper h3{
+    border-bottom: 2px solid;
+    line-height: .85;
+    margin-bottom: 1em;
+}
+
+.presentation-warper p{
+    font-family: var(--sec-font);
+    font-size: 0.7em;
+    width: 60%;
+    line-height: 2;
 }
 
 </style>
