@@ -38,11 +38,10 @@ const cardTransform = computed(() => {
         <p class="title-p">Vous pouvez retrouver ci-dessous un aperçu des tatouages réalisés chez Witch Ink Tattoo</p>
         <div class="grid-warpper">
             <div class="grid-1"><img src="../assets/img/gallery_01.jpeg" alt=""></div>
-            <div class="grid-2"><img src="../assets/img/gallery_02.jpeg" alt=""></div>
-            <div class="grid-3"><img src="../assets/img/gallery_04.jpeg" alt=""></div>
-            <div class="grid-4"><img src="../assets/img/gallery_03.jpeg" alt=""></div>
-            <div class="grid-5"><img src="../assets/img/gallery_05.jpeg" alt=""></div>
-            <div class="grid-6"><img src="../assets/img/gallery_06.jpeg" alt=""></div>
+            <div class="grid-2"><img src="../assets/img/img-presta_2.jpg" alt=""></div>
+            <div class="grid-3"><img src="../assets/img/gallery_07.jpeg" alt=""></div>
+            <div class="grid-4"><img src="../assets/img/gallery_04.jpeg" alt=""></div>
+            <div class="grid-5"><img src="../assets/img/gallery_03.jpeg" alt=""></div>
         </div>
     </div>
 </template>
@@ -86,42 +85,34 @@ const cardTransform = computed(() => {
 
 .grid-warpper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    width: 70%;
-    height: max-content;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: 50%;
+    height: 90vh;
     margin: auto;
 }
 
 .grid-warpper div {
-    
+    background: #000;
     display: flex;
     justify-content: center;
+
 }
 
 .grid-warpper img{
+    /* display: none; */
     height: 100%;
-    height: 100%;
-    border-radius: 5px;
+    width: 100%;
+
 }
 
-.grid-1 { grid-area: 1 / 1 / 2 / 2;
-    height: 40vh; }
-.grid-2 { grid-area: 2 / 1 / 3 / 2;
-    height: 40vh; }
-.grid-3 { grid-area: 1 / 2 / 2 / 3; 
-    height: 60vh; }
-.grid-4 { grid-area: 2 / 2 / 3 / 3;
-    height: 30vh;
-}
-.grid-4 img { border-radius: 10px;
-width: 100%;}
-.grid-5 { grid-area: 1 / 3 / 2 / 4;
-    height: 40vh; }
-.grid-6 { grid-area: 2 / 3 / 3 / 4;
-    height: 40vh; }
+.grid-1 { grid-area: 1 / 1 / 2 / 2; width: 110%;}
+.grid-2 { grid-area: 1 / 2 / 2 / 3; width: 90%; margin-left: 10%; }
+.grid-3 { grid-area: 2 / 1 / 3 / 3; height: 70vh;}
+.grid-4 { grid-area: 3 / 1 / 4 / 2; }
+.grid-5 { grid-area: 3 / 2 / 4 / 3; }
 
 /* === hover === */
 
