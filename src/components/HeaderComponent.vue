@@ -16,14 +16,18 @@ export default {
                 <img class="main-photo" src="../assets/img/339172020_552967780040161_7814666685136169326_n.jpeg" alt="">
             </div>
         </div>
-
         <div class="presentation-warper">
-            <h3>Witch Ink Tatto</h3>
-            <p>Bienvenue chez Witch Ink Tattoo, shop tattoo situé dans Metz centre.
+            <div class="l-div">
+                <img src="../assets/svg/logo-sorcière.svg" alt="">
+            </div>
+            <div class="r-div">
+                <h3>Witch Ink Tatto</h3>
+                <p>Bienvenue chez Witch Ink Tattoo, shop tattoo situé dans Metz centre.
                 <br><br>
                 fait un back ground img <br>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
         </div>
     </header> 
 </template>
@@ -68,7 +72,6 @@ header div {
     font-family: var(--main-font);
     font-size: 2em;
     display: flex;
-    flex-direction: column;
     padding: 3.5em 1em;
     /* background-image: url('../assets/img/presentation-bg.jpg');
     background-size: cover;
@@ -76,16 +79,35 @@ header div {
     background-position: center; */
 }
 
-.presentation-warper h3{
+.l-div {
+width: 40%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.l-div img{
+    width: 80%;
+    height: auto;
+}
+
+.r-div {
+    width: 60%;
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+}
+
+.r-div h3{
     border-bottom: 2px solid;
     line-height: .85;
     margin-bottom: 1em;
 }
 
-.presentation-warper p{
+.r-div p{
     font-family: var(--sec-font);
     font-size: 0.7em;
-    width: 60%;
+    width: 100%;
     line-height: 2;
 }
 
