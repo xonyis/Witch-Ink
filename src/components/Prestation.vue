@@ -1,43 +1,25 @@
-<script lang="ts">
+<script>
 import Toggle from './Toggle.vue';
+import { vScrollReveal } from 'vue-scroll-reveal';
 import { ref, computed } from 'vue';
-import { useMouseInElement } from '@vueuse/core'
+
 
 export default {
     props: ["mode"],
     components: { Toggle }
 }
-const target = ref(null)
-
-const { x, y, isOutside, elementHeight, elementWidth } = useMouseInElement(target)
-
-const cardTransform = computed(() => {
-    const MAX_ROTATION = 6
-
-    const rX = (
-        (elementY.value / elementHeight.value) * MAX_ROTATION - MAX_ROTATION / 2
-    ).toFixed(2)
-
-    const rY = (
-        (elementX.value / elementWidth.value) * MAX_ROTATION - MAX_ROTATION / 2
-    ).toFixed(2)
-
-    return isOutside.value ? '' : `perspective(${elementWidth.value}px) rotateX(${rX}deg) rotatey(${rY}deg)`
-
-})
-
 
 
 </script>
 <template>
     <div class="main-warpper">
         <div class="title-container">
-            <h1><span class="underline">Vous pouvez retrouver ci-dessous un aperçu des tatouages réalisés chez Witch Ink Tattoo</span></h1>
+            <h1 v-scroll-reveal.reset><span class="underline">Vous pouvez retrouver ci-dessous un aperçu des tatouages réalisés chez Witch Ink Tattoo</span></h1>
             
         </div>
         <p class="title-p">Vous pouvez retrouver ci-dessous un aperçu des tatouages réalisés chez Witch Ink Tattoo</p>
         <div class="grid-warpper">
-            <div class="grid-1"><img src="../assets/img/gallery_01.jpeg" alt=""></div>
+            <div class="grid-1" ><img src="../assets/img/gallery_01.jpeg" alt=""></div>
             <div class="grid-2"><img src="../assets/img/img-presta_2.jpg" alt=""></div>
             <div class="grid-3"><img src="../assets/img/gallery_07.jpeg" alt=""></div>
             <div class="grid-4"><img src="../assets/img/gallery_04.jpeg" alt=""></div>
@@ -85,32 +67,33 @@ const cardTransform = computed(() => {
 
 .grid-warpper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
+    grid-template-columns: 25vw 20vw ;
+    grid-template-rows: 40vh 60vh 40vh;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     width: 50%;
-    height: 90vh;
+    height: max-content;
     margin: auto;
+
 }
 
 .grid-warpper div {
     background: #000;
     display: flex;
     justify-content: center;
-
+    border-radius: 20px;
 }
 
 .grid-warpper img{
     /* display: none; */
     height: 100%;
     width: 100%;
-
+    border-radius: 10px;
 }
 
-.grid-1 { grid-area: 1 / 1 / 2 / 2; width: 110%;}
-.grid-2 { grid-area: 1 / 2 / 2 / 3; width: 90%; margin-left: 10%; }
-.grid-3 { grid-area: 2 / 1 / 3 / 3; height: 70vh;}
+.grid-1 { grid-area: 1 / 1 / 2 / 2; }
+.grid-2 { grid-area: 1 / 2 / 2 / 3; }
+.grid-3 { grid-area: 2 / 1 / 3 / 3;}
 .grid-4 { grid-area: 3 / 1 / 4 / 2; }
 .grid-5 { grid-area: 3 / 2 / 4 / 3; }
 
