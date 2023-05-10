@@ -3,6 +3,7 @@ import Nav from './components/Nav.vue';
 import Headers from './components/HeaderComponent.vue'
 import ButtonJN from './components/ButtonJN.vue'
 import Prestation from './components/Prestation.vue'
+import Footer from './components/Footer.vue';
 
 
 export default {
@@ -16,7 +17,8 @@ export default {
     Nav,
     Headers,
     ButtonJN,
-    Prestation
+    Prestation,
+    Footer,
   },
 
   methods: {
@@ -37,6 +39,7 @@ export default {
     <Nav></Nav>
     <Headers></Headers>
     <Prestation></Prestation>
+    <Footer></Footer>
     
   </div>
 </template>
