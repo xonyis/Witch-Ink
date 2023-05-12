@@ -1,40 +1,23 @@
 <script>
 import Nav from './components/Nav.vue';
 import Headers from './components/HeaderComponent.vue'
-import ButtonJN from './components/ButtonJN.vue'
 import Prestation from './components/Prestation.vue'
 import Footer from './components/Footer.vue';
 
 
 export default {
   name: 'app',
-  data () {
-    return {
-     mode: 'light'
-    }
-  },
   components: {
     Nav,
     Headers,
-    ButtonJN,
     Prestation,
     Footer,
-  },
-
-  methods: {
-    toggle() {
-      if (this.mode === "dark") {
-        this.mode = ''
-      } else {
-        this.mode ='dark'
-      }
-    }
   }
 }
 </script>
 
 <template>
-  <div class="app " :class="(mode === 'dark' ? 'dark' : '')">
+  <div class="app ">
     
     <Nav></Nav>
     <Headers></Headers>

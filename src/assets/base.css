@@ -1,16 +1,18 @@
 /* color palette from <https://github.com/vuejs/theme> */
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Vina+Sans&display=swap');
 :root {
     --vt-c-white: #ffffff;
     --white-soft: #f8f8f8;
     --vt-c-white-mute: #f2f2f2;
-    --vt-c-black: #181818;
-    --black-soft: #222222;
-    --vt-c-black-mute: #282828;
+    --black: #141414;
+    --black-soft: #141414;
+    --black-mute: #252525;
     --main-font: 'Ageya';
-    --sec-font: 'Libre Franklin', sans-serif;
+    --sec-font: 'Noto Serif Display', serif;
     --pop-font: 'Poppins', sans-serif;
 }
 
@@ -45,6 +47,7 @@
 *::after {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     position: relative;
     font-weight: normal;
 }

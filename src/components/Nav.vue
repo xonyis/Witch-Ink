@@ -1,11 +1,4 @@
 <script>
-import Toggle from './Toggle.vue';
-
-
-export default {
-    props: ["mode"],
-    components: { Toggle }
-}
 
 </script>
 
