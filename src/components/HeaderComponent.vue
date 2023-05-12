@@ -13,14 +13,15 @@
             </div>
         </div>
     </header> 
+        <img class="svg-top-pre" src="../assets/svg/top-prensentation.svg" alt="">
         <div class="presentation-warper">
             
             <h3>Bienvenue chez Witch Ink Tattoo</h3>
             <p class="pre-text">Le salon Witch Ink Tattoo est l'endroit idéal pour les amateurs de tatouage qui cherchent à ajouter une touche personnelle et créative à leur style.</p>
             <div class="values-warper-1">
                 <div class="text-container">
-                    <h5>Nous mettons l'accent sur <br> la qualité et l'écoute.</h5>
-                    <p>Chez Witch Ink Tattoo, nous sommes fiers de fournir un service personnalisé et attentionné à chaque client, en écoutant attentivement leurs idées et en travaillant avec eux pour créer une œuvre d'art qui correspond à leurs souhaits et leur personnalité. </p>
+                    <h5>Tatouages personnalisés <br> de haute précision</h5>
+                    <p> Utilisant les dernières techniques et les équipements les plus modernes, Tristan travaille avec soin et précision pour créer des tatouages exceptionnels qui reflètent la personnalité et les souhaits de chaque client. </p>
                 </div>
                 <div class="img-warper-1">
                     <div class="img-container-1">
@@ -38,14 +39,17 @@
                     </div>
                 </div>
                 <div class="text-container">
-                    <h5>Tatouages personnalisés <br> de haute précision</h5>
-                    <p> Utilisant les dernières techniques et les équipements les plus modernes, Tristan travaille avec soin et précision pour créer des tatouages exceptionnels qui reflètent la personnalité et les souhaits de chaque client. </p>                </div>
-                <!-- <p>Chez Witch Ink Tattoo, nous sommes fiers de fournir un service personnalisé et attentionné à chaque client, en écoutant attentivement leurs idées et en travaillant avec eux pour créer une œuvre d'art qui correspond à leurs souhaits et leur personnalité. </p>
+                    <h5>Nous mettons l'accent sur <br> la qualité et l'écoute.</h5>
+                    <p>Chez Witch Ink Tattoo, nous sommes fiers de fournir un service personnalisé et attentionné à chaque client, en écoutant attentivement leurs idées et en travaillant avec eux pour créer une œuvre d'art qui correspond à leurs souhaits et leur personnalité. </p>
+                    <!-- <p>Chez Witch Ink Tattoo, nous sommes fiers de fournir un service personnalisé et attentionné à chaque client, en écoutant attentivement leurs idées et en travaillant avec eux pour créer une œuvre d'art qui correspond à leurs souhaits et leur personnalité. </p>
                 <p> Utilisant les dernières techniques et les équipements les plus modernes, Tristan travaille avec soin et précision pour créer des tatouages exceptionnels qui reflètent la personnalité et les souhaits de chaque client. </p> -->
+                    <a href="" class="btn-gallerie">Voir la Gallerie</a>
+                </div>
             </div>
         </div>
 </template>
 <style>
+
 
 
 .header-warper p{
@@ -79,15 +83,21 @@ header div {
     border-radius: 50%;
 }
 
+.svg-top-pre {
+    margin-top: 11vh;
+    margin-bottom: -10vh;
+}
+
 .presentation-warper {
     width: 100%;
     height: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10vh;
     background: var(--black);
     padding-top: 10vh;
+    padding-bottom: 10vh;
+
 }
 
 .presentation-warper h3 {
@@ -139,8 +149,7 @@ header div {
         linear-gradient(to top, var(--coner-color) 1px, transparent 1px) 0 100%,
         linear-gradient(to top, var(--coner-color) 1px, transparent 1px) 100% 100%;
   background-repeat: no-repeat;
-  background-size: 40px 40px;
-      
+  background-size: 40px 40px;  
       
 }
 
@@ -187,9 +196,9 @@ header div {
 
 .img-warper-2 {
     z-index: 2;
-   width: 450px; 
+   width: 35em; 
    --coner-color: rgb(97, 97, 97);
-   height: 550px; 
+   height: 670px; 
    margin-right: 5vw;
     display: flex;
     justify-content: center;
@@ -204,7 +213,7 @@ header div {
         linear-gradient(to top, var(--coner-color) 1px, transparent 1px) 0 100%,
         linear-gradient(to top, var(--coner-color) 1px, transparent 1px) 100% 100%;
   background-repeat: no-repeat;
-  background-size: 40px 40px;
+  background-size: 50px 50px;
       
       
 }
@@ -214,9 +223,23 @@ header div {
 }
 
 .img-container-2 img {
-    width: 25em;
+    width: 30em;
     height: auto;
     border-radius: 5%;
 }
 
+.btn-gallerie {
+    position: absolute;
+    margin-top: 1.5em;
+    background: #f2f2f2;
+    padding: .7em 1em ;
+    font-size: 1.5em;
+    letter-spacing: 1.2px;
+    color: var(--black-mute);
+    font-family: var(--main-font);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
 </style>
