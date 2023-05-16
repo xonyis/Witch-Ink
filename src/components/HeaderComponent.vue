@@ -134,7 +134,6 @@ header div {
 .img-warper-1 {
     z-index: 2;
    width: 450px; 
-   --coner-color: rgb(97, 97, 97);
    height: 550px; 
     display: flex;
     justify-content: center;

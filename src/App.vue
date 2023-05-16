@@ -1,7 +1,7 @@
 <script>
 import Nav from './components/Nav.vue';
 import Headers from './components/HeaderComponent.vue'
-import Prestation from './components/Prestation.vue'
+import Reviews from './components/ReviewsComponent.vue'
 import Footer from './components/Footer.vue';
 
 
@@ -10,8 +10,17 @@ export default {
   components: {
     Nav,
     Headers,
-    Prestation,
+    Reviews,
     Footer,
+  },
+  data() {
+    return {
+      posts: [
+        { id: 1, title: 'My journey with Vue' },
+        { id: 2, title: 'Blogging with Vue' },
+        { id: 3, title: 'Why Vue is so fun' }
+      ]
+    }
   }
 }
 </script>
@@ -21,7 +30,8 @@ export default {
     
     <Nav></Nav>
     <Headers></Headers>
-    <Prestation></Prestation>
+    <Reviews></Reviews>
+    
     <Footer></Footer>
     
   </div>
