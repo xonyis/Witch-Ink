@@ -50,6 +50,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border: 1px solid var(--coner-color);
 }
 
 .card-container h3 {
