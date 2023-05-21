@@ -29,6 +29,8 @@ export default {
 </script>
 <template>
     <div class="main-container">
+      <h3>
+Découvrez les témoignages de nos clients satisfaits et laissez-vous inspirer par les réalisations artistiques de notre tatoueur talentueux.</h3>
         <div class="review-warper">     
           <Carousel>
             <Slide v-for="post in posts" :key="post">

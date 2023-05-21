@@ -47,6 +47,8 @@
                 </div>
             </div>
         </div>
+        <img class="svg-bot-pre" src="../assets/svg/top-prensentation.svg" alt="">
+
 </template>
 <style>
 
@@ -86,6 +88,10 @@ header div {
 .svg-top-pre {
     margin-top: 11vh;
     margin-bottom: -10vh;
+}
+
+.svg-bot-pre {
+    transform: rotate(180deg);
 }
 
 .presentation-warper {
