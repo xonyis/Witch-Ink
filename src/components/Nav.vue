@@ -5,10 +5,10 @@
 <template>
     <nav>
        <ul>
-        <li class="nav-links"><a href="">Accueil</a></li>
-        <li class="nav-links"><a href="">Gallerie</a></li>
+        <li class="nav-links"><a href="/">Accueil</a></li>
+        <li class="nav-links"><a href="/gallery">Gallerie</a></li>
         <li class="shop-name">Witch Ink Tattoo</li>
-        <li class="nav-links"><a href="">A propos</a></li>
+        <li class="nav-links"><a href="/about">A propos</a></li>
         <li class="nav-links"><a href="">Contact</a></li>
        </ul>
     </nav>

@@ -29,8 +29,10 @@ export default {
 </script>
 <template>
     <div class="main-container">
-      <h3>
-Découvrez les témoignages de nos clients satisfaits et laissez-vous inspirer par les réalisations artistiques de notre tatoueur talentueux.</h3>
+      <div class="title-warp">
+        <h2>Témoignages</h2>
+        <h3>Découvrez les témoignages de nos clients satisfaits et laissez-vous inspirer par les réalisations artistiques de notre tatoueur talentueux.</h3>
+      </div>
         <div class="review-warper">     
           <Carousel>
             <Slide v-for="post in posts" :key="post">
@@ -73,6 +75,25 @@ Découvrez les témoignages de nos clients satisfaits et laissez-vous inspirer p
 .main-container {
     width: 100%;
     height: max-content;
+}
+
+.title-warp {
+  width: 100%;
+  height: max-content;
+  text-align: center;
+}
+
+.title-warp h2{
+  font-family: var(--main-font);
+  font-size: 3em;
+}
+
+.title-warp h3 {
+  font-family: var(--sec-font);
+  width: 70%;
+  font-size: 1.5em;
+  margin: auto;
+  margin-top: 1.5em;
 }
 
 /* === CARD === */

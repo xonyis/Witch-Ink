@@ -1,39 +1,10 @@
 <script>
-import Nav from './components/Nav.vue';
-import Headers from './components/HeaderComponent.vue'
-import Reviews from './components/ReviewsComponent.vue'
-import Footer from './components/Footer.vue';
-
-
-export default {
-  name: 'app',
-  components: {
-    Nav,
-    Headers,
-    Reviews,
-    Footer,
-  },
-  data() {
-    return {
-      posts: [
-        { id: 1, title: 'My journey with Vue' },
-        { id: 2, title: 'Blogging with Vue' },
-        { id: 3, title: 'Why Vue is so fun' }
-      ]
-    }
-  }
-}
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
   <div class="app ">
-    
-    <Nav></Nav>
-    <Headers></Headers>
-    <Reviews></Reviews>
-    
-    <Footer></Footer>
-    
+    <router-view></router-view>
   </div>
 </template>
 

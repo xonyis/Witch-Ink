@@ -29,7 +29,7 @@
         </div>
         <div class="mid-warper">
             <h3>à Propos de nous</h3>
-            <p>DrawTattoo est le premier salon de tatouage à l'influence urbaine Hip Hop. Nous soutenons l'affirmation de soi et valorisons la différence.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ad velit perferendis iusto aliquid id laboriosam repudiandae commodi ducimus numquam, et minima ex! Nihil tempore animi ea nulla necessitatibus non.</p>
         </div>
     </div>
 </template>

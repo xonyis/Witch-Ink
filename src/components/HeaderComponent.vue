@@ -43,7 +43,7 @@
                     <p>Chez Witch Ink Tattoo, nous sommes fiers de fournir un service personnalisé et attentionné à chaque client, en écoutant attentivement leurs idées et en travaillant avec eux pour créer une œuvre d'art qui correspond à leurs souhaits et leur personnalité. </p>
                     <!-- <p>Chez Witch Ink Tattoo, nous sommes fiers de fournir un service personnalisé et attentionné à chaque client, en écoutant attentivement leurs idées et en travaillant avec eux pour créer une œuvre d'art qui correspond à leurs souhaits et leur personnalité. </p>
                 <p> Utilisant les dernières techniques et les équipements les plus modernes, Tristan travaille avec soin et précision pour créer des tatouages exceptionnels qui reflètent la personnalité et les souhaits de chaque client. </p> -->
-                    <a href="" class="btn-gallerie">Voir la Gallerie</a>
+                    <a href="/gallery" class="btn-gallerie">Voir la Gallerie</a>
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@ header div {
 
 .svg-top-pre {
     margin-top: 11vh;
-    margin-bottom: -10vh;
+    margin-bottom: -20vh;
 }
 
 .svg-bot-pre {
@@ -101,7 +101,6 @@ header div {
     flex-direction: column;
     align-items: center;
     background: var(--black);
-    padding-top: 10vh;
     padding-bottom: 10vh;
 
 }
