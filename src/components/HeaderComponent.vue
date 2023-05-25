@@ -13,7 +13,9 @@
             </div>
         </div>
     </header> 
+        <div class="svg-container">
         <img class="svg-top-pre" src="../assets/svg/top-prensentation.svg" alt="">
+    </div>
         <div class="presentation-warper">
             
             <h3>Bienvenue chez Witch Ink Tattoo</h3>
@@ -47,8 +49,9 @@
                 </div>
             </div>
         </div>
+        <div class="svg-container">
         <img class="svg-bot-pre" src="../assets/svg/top-prensentation.svg" alt="">
-
+        </div>
 </template>
 <style>
 
@@ -85,13 +88,19 @@ header div {
     border-radius: 50%;
 }
 
+.svg-container {
+    overflow: hidden;
+}
+
 .svg-top-pre {
     margin-top: 11vh;
     margin-bottom: -20vh;
+    overflow: hidden;
 }
 
 .svg-bot-pre {
     transform: rotate(180deg);
+    overflow: hidden;
 }
 
 .presentation-warper {

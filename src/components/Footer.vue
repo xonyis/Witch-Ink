@@ -12,16 +12,19 @@
             </div>
             <div class="social-container">
                 <div class="social-btn">
-                    <a href="" class="social-icon"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
+                    <a href="https://www.instagram.com/witch.inktattoo/" class="social-icon"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
                 </div>
                 <div class="social-btn">
-                    <a href="" class="social-icon"><font-awesome-icon icon="fa-brands fa-tiktok" /></a>
+                    <a href="https://www.tiktok.com/@witch.ink.tattoo" class="social-icon"><font-awesome-icon icon="fa-brands fa-tiktok" /></a>
                 </div>
                 <div class="social-btn">
                     <a href="" class="social-icon"><font-awesome-icon icon="fa-regular fa-envelope" /></a>
                 </div>
             </div>
-            <ul class="menu-warper">
+           
+        </div>
+        <div class="menu-warper">
+            <ul>
                 <li class="foot-links"><a href="">Accueil</a></li>
                 <li class="foot-links"><a href="">Gallerie</a></li>
                 <li class="foot-links"><a href="">A propos</a></li>
@@ -41,7 +44,9 @@
     background: var(--black-soft);
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
     color: var(--white-soft);
+    font-size: 15px;
 }
 
 .main-warper div h3{
@@ -79,7 +84,7 @@
 }
 
 .social-container {
-    height: 70%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -100,7 +105,14 @@
     font-size: 2em;
 }
 
-.menu-warper{
+.menu-warper {
+    display: flex;
+    height: 80%;
+
+    align-items: center;
+}
+
+.menu-warper ul{
     width: fit-content;
     height: 47%;
     display: flex;
@@ -144,7 +156,7 @@
 .mid-warper {
     width: 25%;
     margin-top: 2em;
-    height: max-content;
+    height: 80%;
 }
 
 .mid-warper h3 {
@@ -157,6 +169,18 @@
 
 .mid-warper p{
     font-family: var(--sec-font);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .main-warper {
+        font-size: 0.7em;
+    }
+}
+
+@media screen  and (max-width: 450px){
+    .main-warper {
+        font-size: 0.5em;
+    }
 }
 
 </style>
