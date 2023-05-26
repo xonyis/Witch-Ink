@@ -7,7 +7,6 @@
             <div class="info-warper">
                 <img src="../assets/svg/logo-sorcière.svg" alt="">
                 <h3>Witch Ink Tattoo</h3>
-                <p>COPYRIGHT &copy; 💜 by xonyis</p>
                 <a href="">Mention Légales</a>
             </div>
             <div class="social-container">
@@ -25,9 +24,9 @@
         </div>
         <div class="menu-warper">
             <ul>
-                <li class="foot-links"><a href="">Accueil</a></li>
-                <li class="foot-links"><a href="">Gallerie</a></li>
-                <li class="foot-links"><a href="">A propos</a></li>
+                <li class="foot-links"><a href="/">Accueil</a></li>
+                <li class="foot-links"><a href="/gallery">Gallerie</a></li>
+                <li class="foot-links"><a href="/about">A propos</a></li>
             </ul>
         </div>
         <div class="mid-warper">

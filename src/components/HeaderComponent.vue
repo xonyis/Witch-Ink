@@ -189,7 +189,7 @@ header div {
 
 .text-container p {
     font-size: 1.2em;
-    width: 550px;
+    width: 100%;
     font-weight: 250;
     font-family: var(--pop-font);
     

@@ -83,4 +83,22 @@ a:hover::before {
 
 }
 
+
+@media screen and (min-width: 760px) and (max-width: 950px) {
+  .nav-links {
+    font-size: 20px;
+  }
+  .shop-name {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 759px) {
+  .nav-links {
+    font-size: 10px;
+  }
+  .shop-name {
+    font-size: 30px;
+  }
+}
 </style>

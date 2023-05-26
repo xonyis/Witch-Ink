@@ -34,6 +34,7 @@ export default {
 
 .text-review {
     height: 50%;
+    font-size: 1em;
 }
 
 .text-review span {
@@ -74,4 +75,17 @@ export default {
     font-size: .8em;
     font-family: var(--pop-font);
 }
+
+@media screen and (min-width: 768px) and (max-width: 1025px){
+    .card-container h3 {
+    font-size: 1em;
+}
+}
+
+@media screen  and (max-width: 450px){
+    .main-warper {
+        font-size: 0.5em;
+    }
+}
+
 </style>

@@ -1,11 +1,13 @@
 <script>
 import Nav from '../components/Nav.vue';
+import About from '../components/AboutComponent.vue'
 import Footer from '../components/Footer.vue';
 
 export default {
   name: 'gallery',
   components: {
     Nav,
+    About,
     Footer
   }
 }
@@ -13,7 +15,7 @@ export default {
 <template>
     <div>
         <Nav></Nav>
-        About View
+        <About/>
         <Footer></Footer>
     </div>
 </template>
