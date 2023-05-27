@@ -6,10 +6,10 @@
     <nav>
        <ul>
         <li class="nav-links"><a href="/">Accueil</a></li>
-        <li class="nav-links"><a href="/gallery">Galerie</a></li>
+        <li class="nav-links"><a href="/gallery/">Galerie</a></li>
         <li class="shop-name">Witch Ink Tattoo</li>
-        <li class="nav-links"><a href="/about">A propos</a></li>
-        <li class="nav-links"><a href="">Contact</a></li>
+        <li class="nav-links"><a href="/about/">A propos</a></li>
+        <li class="nav-links"><a href="/contact/">Contact</a></li>
        </ul>
     </nav>
 

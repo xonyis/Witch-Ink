@@ -76,10 +76,14 @@ export default {
     font-family: var(--pop-font);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1025px){
+@media screen and (min-width: 768px) and (max-width: 1125px){
     .card-container h3 {
     font-size: 1em;
 }
+    .card-container {
+        width: 45vw;
+        height: 100vh;
+    }
 }
 
 @media screen  and (max-width: 450px){
