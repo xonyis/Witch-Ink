@@ -4,11 +4,11 @@
 <template>
     <header>
         <div class="header-warper">
-            <div>
+            <div class="header-l">
                 <p><span class="sp-witch">Witch Ink Tattoo</span>
                 <br>Salon de tatouage à Metz  </p>
             </div>
-            <div  >
+            <div class="header-r" >
                 <img class="main-photo" src="../assets/img/339172020_552967780040161_7814666685136169326_n.jpeg" alt="">
             </div>
         </div>
@@ -189,7 +189,7 @@ header div {
 
 .text-container p {
     font-size: 1.2em;
-    width: 100%;
+    width: 80%;
     font-weight: 250;
     font-family: var(--pop-font);
     
@@ -211,7 +211,7 @@ header div {
     z-index: 2;
    width: 35em; 
    --coner-color: rgb(97, 97, 97);
-   height: 670px; 
+   height: auto; 
    margin-right: 5vw;
     display: flex;
     justify-content: center;
@@ -255,4 +255,75 @@ header div {
     border-radius: 5px;
     text-transform: uppercase;
 }
+
+/* HEADER */
+@media screen and (min-width: 1000px) and (max-width: 1180px) {
+    .header-warper p{
+    font-size: 2.8em;  
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .header-warper p{
+    font-size: 2.3em;  
+}
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    .header-warper p{
+    font-size: 1.7em;  
+}
+    .pre-text {
+    width: 80%;
+    }
+
+}
+
+@media screen and (min-width: 490px) and (max-width: 640px) {
+    .presentation-warper h3 {
+        font-size: 2.4em;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 520px) {
+    .presentation-warper h3 {
+        font-size: 1.9em;
+    }
+}
+
+
+@media screen and (min-width: 490px) and (max-width: 600px) {
+.header-warper {
+    flex-direction: column;
+}
+
+.header-warper div{
+    width: 80%;
+
+}
+}
+
+/* PRESENTATION */
+
+@media screen and (min-width: 490px) and (max-width: 1024px) {
+    .values-warper-1 {
+        flex-direction: column-reverse;
+    }
+
+    .values-warper-2 {
+        flex-direction: column;
+    }
+    .text-container {
+        width: 100%;
+        margin-top: 10vh;
+    }
+
+    .text-container p{
+        width: 100%;
+    }
+
+    .img-warper-2 {
+        margin-right: 0;
+    }
+}
+
 </style>
