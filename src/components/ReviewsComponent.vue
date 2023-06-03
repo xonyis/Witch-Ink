@@ -44,7 +44,7 @@ export default {
                     <h3>{{ post.title }}</h3>
                     <div class="icon-star"><font-awesome-icon icon="fa-solid fa-star" /><font-awesome-icon icon="fa-solid fa-star fa-2xl" /><font-awesome-icon icon="fa-solid fa-star" /><font-awesome-icon icon="fa-solid fa-star" /><font-awesome-icon icon="fa-solid fa-star" /></div>
                 </div>
-                <p class="text-review">{{ post.text }} <br> <span>Visité en {{ post.visited }}</span></p>                
+                <p class="text-review"> <br>{{ post.text }} <br> <span>Visité en {{ post.visited }}</span></p>                
             </div>  
           </div>
               </div>
@@ -149,8 +149,8 @@ export default {
 }
 
 .card-container {
-    width: 30vw;
-    height: 50vh;
+    width: 35vw;
+    height: max-content;
     padding: 2vh 3vw;
     padding-bottom: 7vh;
     border: 1px solid;
@@ -158,7 +158,6 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border: 1px solid var(--coner-color);
 }
 
 .card-container h3 {

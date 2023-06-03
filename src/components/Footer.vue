@@ -27,6 +27,7 @@
                 <li class="foot-links"><a href="/">Accueil</a></li>
                 <li class="foot-links"><a href="/gallery">Gallerie</a></li>
                 <li class="foot-links"><a href="/about">A propos</a></li>
+                <li class="foot-links"><a href="/about">Contact</a></li>
             </ul>
         </div>
         <div class="mid-warper">
@@ -127,7 +128,7 @@
 .menu-warper a {
     text-decoration: none;
     color: var(--white-soft);
-    font-size: 2.7em;
+    font-size: 2em;
     font-family: var(--main-font);
 }
 

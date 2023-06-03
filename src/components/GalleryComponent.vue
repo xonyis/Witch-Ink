@@ -9,52 +9,45 @@
         </ul>
       </div>
       <div class="galerie-container">
-      <masonry-wall :items="items" :ssr-columns="1" :column-width="300" :gap="16">
-        <template #default="{ item, index }">
-          <div :style="{ height: `${index * 100}px` }">
-            <h2>{{ item.title }}</h2>
-            <p>{{ item.description }}</p>
-          </div>
-        </template>
-      </masonry-wall>
+
+      <h1>Photos Instagram</h1>
+      <div v-if="photos.length > 0" class="instagram-photos">
+        <div v-for="photo in photos" :key="photo.id" class="instagram-photo">
+          <img :src="photo.media_url" :alt="photo.caption" />
+        </div>
+      </div>
+      <div v-else>
+        <p>Aucune photo Instagram disponible.</p>
+      </div>
       </div>
     </main>
   </template>
   
   <script>
-  import { ref } from 'vue';
-  import MasonryWall from '@yeger/vue-masonry-wall';
+import { ref, onMounted } from 'vue';
+  import axios from 'axios';
   
   export default {
-    components: {
-      MasonryWall,
-    },
     setup() {
-      const items = ref([
-        {
-          title: 'Premier',
-          description: 'Le premier élément.',
-        },
-        {
-          title: 'Deuxième',
-          description: 'Le deuxième élément.',
-        },
-        {
-          title: 'Deuxième',
-          description: 'Le deuxième élément.',
-        },
-        {
-          title: 'Deuxième',
-          description: 'Le deuxième élément.',
-        },
-        {
-          title: 'Deuxième',
-          description: 'Le deuxième élément.',
-        },
-      ]);
+      const photos = ref([]);
+  
+      // Remplacez ces valeurs par les clés d'accès de votre application Instagram
+      const clientId = '779555516968387';
+      const accessToken = 'IGQVJWbjN2T0ZAIR0NZAeWxmYlFHT2RUT2l0czVFNXg0SWlLSlNRb0lTeVhLdlZAxX3A3cDBDSi1kcWNKTmQ0NWo5Y2dtSWU1V3lmRGpKX25JQzlOblNvcW51dElSX3lFcnJQUGl0aUw4bEc1R3dweHFhSAZDZD';
+  // tristan token IGQVJWbjN2T0ZAIR0NZAeWxmYlFHT2RUT2l0czVFNXg0SWlLSlNRb0lTeVhLdlZAxX3A3cDBDSi1kcWNKTmQ0NWo5Y2dtSWU1V3lmRGpKX25JQzlOblNvcW51dElSX3lFcnJQUGl0aUw4bEc1R3dweHFhSAZDZD
+      onMounted(async () => {
+        try {
+          const response = await axios.get(
+            `https://graph.instagram.com/me/media?fields=id,caption,media_url&access_token=${accessToken}`
+          );
+          photos.value = response.data.data;
+        } catch (error) {
+          console.error('Erreur lors de la récupération des photos Instagram', error);
+        }
+      });
   
       return {
-        items,
+        photos,
       };
     },
   };
@@ -123,4 +116,22 @@ h2 {
 p {
   margin-bottom: 0;
 }
+
+.instagram-photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .instagram-photo {
+    width: 300px;
+  }
+  
+  .instagram-photo img {
+    width: 100%;
+  }
+
+  .main-container {
+    height: 100vh;
+  }
 </style>
