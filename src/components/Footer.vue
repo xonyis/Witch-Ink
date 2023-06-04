@@ -27,7 +27,7 @@
                 <li class="foot-links"><a href="/">Accueil</a></li>
                 <li class="foot-links"><a href="/gallery">Gallerie</a></li>
                 <li class="foot-links"><a href="/about">A propos</a></li>
-                <li class="foot-links"><a href="/about">Contact</a></li>
+                <li class="foot-links"><a href="">Contact</a></li>
             </ul>
         </div>
         <div class="mid-warper">
