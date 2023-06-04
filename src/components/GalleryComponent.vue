@@ -88,20 +88,7 @@ main {
 }
 
 .galerie-container {
-  margin-top: 5vh;
-}
-
-.masonry-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.masonry-item {
-  background-color: #f2f2f2;
-  padding: 10px;
-  border-radius: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 10vh;
 }
 
 h1 {
@@ -119,9 +106,12 @@ p {
 }
 
 .instagram-photos {
+  width: 95%;
+  margin: auto;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 3em;
   }
   
   .instagram-photo {
@@ -130,6 +120,9 @@ p {
   
   .instagram-photo img {
     width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
   }
 
   .main-container {
