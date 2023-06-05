@@ -16,10 +16,45 @@ export default {
         <div v-show="modalActive" class="modal">
             <transition name="modal-animation-inner">
                 <div v-show="modalActive" class="modal-inner">
+                    <h1>Contact</h1>
                     <font-awesome-icon @click="close" class="faIcon" icon="fa-solid fa-x" />
                     <!-- modal content -->
-                    <slot />
-                    <button type="button" @click="close">close</button>
+                    <div class="modal-content">
+                        <div class="modal-item">
+                            <div class="fa-icon">
+                                <font-awesome-icon icon="fa-brands fa-instagram" />
+                            </div>
+                            <div class="modal-text">
+                                <p>Envie de discuter de votre prochaine création ?</p>
+                               <p>Envoyez nous un message sur <a target="_blank" href="https://www.instagram.com/witch.inktattoo/">notre instagram</a></p> 
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="modal-content">
+                        <div class="modal-item">
+                            <div class="fa-icon">
+                                <font-awesome-icon icon="fa-solid fa-phone"/>
+                            </div>
+                            <div class="modal-text">
+                                <p>Vous souhaiter plutôt échanger par téléphone ?</p>
+                                
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="modal-content">
+                        <div class="modal-item">
+                            <div class="fa-icon">
+                                <font-awesome-icon  icon="fa-solid fa-shop" />
+                            </div>
+                            <div class="modal-text">
+                                <p>N'hésitez pas a passer nous voir au salon</p>
+                                <p>Adresse : 13 rue du Pont des morts, Metz, 57000 </p> 
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
                 </div>
             </transition>
         </div>
@@ -27,6 +62,21 @@ export default {
 </template>
 
 <style scoped>
+
+.close-btn {
+    padding: 5px;
+    font-family: var(--main-font);
+    font-size: 1.2em;
+    border: none;
+    border-radius: 2px;
+    background: #d8d8d8;
+    transition: all ease .3s;
+}
+.close-btn:hover {
+    background-color: rgb(225, 41, 41);
+    color: white;
+    border: none;
+}
 .modal {
     display: flex;
     justify-content: center;
@@ -47,7 +97,30 @@ export default {
     width: 80%;
     background: var(--white-soft);
     border-radius: 10px;
-    padding: 64px 16px;
+    padding: 40px 30px;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.fa-icon {
+    display: flex;
+    width: 10%;
+    font-size: 2.5em;
+    color: var(--black-soft);
+}
+
+hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .faIcon {
@@ -55,6 +128,11 @@ export default {
     top: 15px;
     right: 20px;
     cursor: pointer;
+    font-size: 1.2em;
+}
+
+h1 {
+    margin-top: -45px;
 }
 
 .faIcon:hover {

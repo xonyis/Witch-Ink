@@ -11,10 +11,6 @@
        </ul>
     </nav>
     <Modal @close="toggleModal" :modalActive="modalActive">
-      <div class="modal-content">
-        <h1>this is a modal header</h1>
-        <p>this is a modal message</p>
-      </div>
     </Modal>
 </template>
 

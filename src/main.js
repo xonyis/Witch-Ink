@@ -12,11 +12,11 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* import specific icons */
 import { faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons'
 import { faCircleCheck, faEnvelope } from '@fortawesome/free-regular-svg-icons'
-import { faStar, faX } from '@fortawesome/free-solid-svg-icons'
+import { faPhone, faShop, faStar, faX } from '@fortawesome/free-solid-svg-icons'
 
 
 
-library.add(faInstagram, faTiktok, faEnvelope, faStar, faCircleCheck, faStar, faX)
+library.add(faInstagram, faTiktok, faEnvelope, faStar, faCircleCheck, faStar, faX, faShop, faPhone)
 import './assets/main.css'
 
 const app = createApp(App)
