@@ -1,4 +1,6 @@
 <script>
+import { ref } from 'vue';
+
 
 import Nav from '../components/Nav.vue';
 import Headers from '../components/HeaderComponent.vue'
@@ -21,6 +23,7 @@ export default {
   <div class="app ">
     
     <Nav></Nav>
+    
     <Headers></Headers>
     <Reviews></Reviews>
     

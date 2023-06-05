@@ -7,53 +7,39 @@
         <li class="nav-links"><a href="/gallery/">Galerie</a></li>
         <li class="shop-name">Witch Ink Tattoo</li>
         <li class="nav-links"><a href="/about/">A propos</a></li>
-        <li class="nav-links"><button @click="overlay = !overlay">Contact</button></li>
+        <li class="nav-links"><button @click="toggleModal">Contact</button></li>
        </ul>
     </nav>
-    <div id="overlay" v-if="overlay">
-      <button @click="overlay = !overlay"><font-awesome-icon icon="fa-solid fa-x" style="color: #f8f8f8;" /></button>
-    </div>
-    <div v-else>
-      
-    </div>
-
+    <Modal @close="toggleModal" :modalActive="modalActive">
+      <div class="modal-content">
+        <h1>this is a modal header</h1>
+        <p>this is a modal message</p>
+      </div>
+    </Modal>
 </template>
 
 <script>
+import { ref } from 'vue';
+
+import Modal from '../components/OverlayComponent.vue'
+
 export default {
-  data() {
-  	return {
-	    overlay: true
-  	}
-	}
+  
+  components: {
+    Modal,
+  },
+  setup() {
+    const modalActive = ref(false);
+
+    const toggleModal = () =>  {
+      modalActive.value = !modalActive.value
+    }
+    return {modalActive, toggleModal};
+  }
 }
 </script>
 
 <style scoped>
-
-
-#overlay {
-  position: fixed;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.678);
-  z-index: 2;
-  cursor: pointer;
-}
-
-#overlay button {
-  background: none;
-  border: none;
-  font-size: 2em;
-  float: right;
-  margin-right: 2vw;
-  margin-top: 2vh;
-}
 
 nav ul{
     display: flex;
@@ -129,10 +115,12 @@ a:hover::before {
   background-color: var(--black-soft);
   transform: scaleX(0);
   transition: transform 0.4s ease;
+  
 }
 
 .nav-links button:hover::before {
   transform: scaleX(1);
+  
 }
 
 .dark a {
