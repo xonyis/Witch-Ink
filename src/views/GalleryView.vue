@@ -16,5 +16,6 @@ export default {
     <div>
         <Nav></Nav>
         <Gallery/>
+        <Footer></Footer>
     </div>
 </template>

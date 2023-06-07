@@ -149,10 +149,7 @@ export default {
 }
 
 .card-container {
-    width: 35vw;
-    height: max-content;
-    padding: 2vh 3vw;
-    padding-bottom: 7vh;
+    width: 35%;
     border: 1px solid;
     display: flex;
     flex-direction: column;
@@ -182,4 +179,10 @@ export default {
     font-family: var(--pop-font);
 }
 
+@media screen and (max-width: 1125px){
+    .card-container {
+    width: 75%;
+}
+
+}
 </style>

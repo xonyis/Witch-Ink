@@ -146,9 +146,8 @@ header div {
 }
 
 .img-warper-1 {
-    z-index: 2;
-   width: 450px; 
-   height: 550px; 
+   width: max-content;
+   padding: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,7 +170,7 @@ header div {
 }
 
 .img-container-1 img {
-    width: 25em;
+    width: 25vw;
     height: auto;
     border-radius: 5%;
 }
@@ -208,8 +207,9 @@ header div {
 }
 
 .img-warper-2 {
-    z-index: 2;
-   width: 35em; 
+    width: max-content;
+    padding: 2em; 
+    height: max-content;
    --coner-color: rgb(97, 97, 97);
    height: auto; 
    margin-right: 5vw;
@@ -236,7 +236,7 @@ header div {
 }
 
 .img-container-2 img {
-    width: 30em;
+    max-width: 35vw;
     height: auto;
     border-radius: 5%;
 }
@@ -324,6 +324,7 @@ header div {
     .img-warper-2 {
         margin-right: 0;
     }
+
 }
 
 </style>

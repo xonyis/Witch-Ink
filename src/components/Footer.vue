@@ -1,5 +1,22 @@
-<script setup>
+<script >
+import { ref } from 'vue';
 
+import Modal from '../components/OverlayComponent.vue'
+
+export default {
+  
+  components: {
+    Modal,
+  },
+  setup() {
+    const modalActive = ref(false);
+
+    const toggleModal = () =>  {
+      modalActive.value = !modalActive.value
+    }
+    return {modalActive, toggleModal};
+  }
+}
 </script>
 <template>
     <div class="main-warper">     
@@ -11,13 +28,10 @@
             </div>
             <div class="social-container">
                 <div class="social-btn">
-                    <a href="https://www.instagram.com/witch.inktattoo/" class="social-icon"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
+                    <a arget="_blank" href="https://www.instagram.com/witch.inktattoo/" class="social-icon"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
                 </div>
                 <div class="social-btn">
-                    <a href="https://www.tiktok.com/@witch.ink.tattoo" class="social-icon"><font-awesome-icon icon="fa-brands fa-tiktok" /></a>
-                </div>
-                <div class="social-btn">
-                    <a href="" class="social-icon"><font-awesome-icon icon="fa-regular fa-envelope" /></a>
+                    <a target="_blank" href="https://www.tiktok.com/@witch.ink.tattoo" class="social-icon"><font-awesome-icon icon="fa-brands fa-tiktok" /></a>
                 </div>
             </div>
            
@@ -27,14 +41,16 @@
                 <li class="foot-links"><a href="/">Accueil</a></li>
                 <li class="foot-links"><a href="/gallery">Gallerie</a></li>
                 <li class="foot-links"><a href="/about">A propos</a></li>
-                <li class="foot-links"><a href="">Contact</a></li>
+                <li class="foot-links"><button @click="toggleModal">Contact</button></li>
             </ul>
         </div>
         <div class="mid-warper">
             <h3>à Propos de nous</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ad velit perferendis iusto aliquid id laboriosam repudiandae commodi ducimus numquam, et minima ex! Nihil tempore animi ea nulla necessitatibus non.</p>
+            <p>Witch Ink Tatto, situé au centre de Metz, est un salon de tatouage qui sort de l'ordinaire. <br> Trisan, tatoueur dédié à créer des œuvres créative, uniques et significatives. Grâce a son expérience, il a su se créer une réputation solide en tant que destination de choix pour les amateurs de tatouages de qualité.</p>
         </div>
     </div>
+    <Modal @close="toggleModal" :modalActive="modalActive">
+    </Modal>
 </template>
 <style scoped>
 .main-warper {
@@ -132,6 +148,16 @@
     font-family: var(--main-font);
 }
 
+.menu-warper button {
+  background: none;
+  border: none;
+  font-family: var(--main-font);
+  color: var(--white-soft);
+  font-size: 30px;
+  height: max-content;
+}
+
+
 
 .menu-warper a::before {
   content: "";
@@ -150,11 +176,28 @@
   transform: scaleX(1);
 }
 
+.menu-warper button::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--white-soft);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.menu-warper button:hover::before {
+  transform: scaleX(1);
+}
+
 
 
 
 .mid-warper {
-    width: 25%;
+    width: 30%;
     margin-top: 2em;
     height: 80%;
 }
@@ -169,6 +212,7 @@
 
 .mid-warper p{
     font-family: var(--sec-font);
+    width: 90%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px){

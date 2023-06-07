@@ -134,6 +134,9 @@ a:hover::before {
   .nav-links {
     font-size: 20px;
   }
+  .nav-links button{
+    font-size: 20px;
+  }
   .shop-name {
     font-size: 40px;
   }
@@ -141,6 +144,10 @@ a:hover::before {
 
 @media screen and (min-width: 420px) and (max-width: 759px) {
   .nav-links {
+    font-size: 10px;
+  }
+
+  .nav-links button{
     font-size: 10px;
   }
   .shop-name {

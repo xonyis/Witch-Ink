@@ -42,18 +42,6 @@ export default {
     color: var(--coner-color);
 }
 
-.card-container {
-    width: 25vw;
-    height: 40vh;
-    padding: 5vh 3vw;
-    padding-bottom: 7vh;
-    border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-}
-
 .card-container h3 {
     font-size: 2.5em;
     font-family: var(--main-font);
@@ -80,10 +68,7 @@ export default {
     .card-container h3 {
     font-size: 1em;
 }
-    .card-container {
-        width: 45vw;
-        height: 100vh;
-    }
+
 }
 
 @media screen  and (max-width: 450px){

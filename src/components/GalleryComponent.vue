@@ -17,6 +17,9 @@
       <div v-else>
         <p>Aucune photo Instagram disponible.</p>
       </div>
+      <div class="voir-btn">
+        <a target="_blank" href="https://www.instagram.com/witch.inktattoo/">En voir plus</a>
+      </div>
       </div>
     </main>
   </template>
@@ -89,6 +92,7 @@ main {
 
 .galerie-container {
   margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 h1 {
@@ -128,4 +132,33 @@ p {
   .main-container {
     height: 100vh;
   }
+
+  .voir-btn {
+    text-align: center;
+    padding: 5vh;
+    font-family: var(--main-font);
+    font-size: 2em;
+  }
+
+  .voir-btn a{
+    text-decoration: none;
+    color: var(--black-soft);
+  }
+
+  .voir-btn a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1.15px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--black-soft);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.voir-btn a:hover::before {
+  transform: scaleX(1);
+}
 </style>
