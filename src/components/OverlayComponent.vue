@@ -165,5 +165,13 @@ h1 {
     transform: scale(0.8);
 }
 
+@media screen and (max-width: 600px) {
+    .modal-text {
+        font-size: .7em;
+    }
 
+    .modal-item {
+        justify-content: space-around;
+    }
+}
 </style>

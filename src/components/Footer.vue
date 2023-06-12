@@ -211,7 +211,7 @@ export default {
 }
 
 .mid-warper p{
-    font-family: var(--sec-font);
+    font-family: var(--pop-font);
     width: 90%;
 }
 
