@@ -215,14 +215,21 @@ export default {
     width: 90%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (max-width: 1024px){
     .main-warper {
         font-size: 0.7em;
+    }
+    .menu-warper button {
+        font-size: 2em;
     }
 }
 
 @media screen  and (max-width: 450px){
     .main-warper {
+        font-size: 0.5em;
+    }
+
+    .menu-warper button {
         font-size: 0.5em;
     }
 }

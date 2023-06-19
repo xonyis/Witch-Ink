@@ -50,7 +50,7 @@ export default {
                             </div>
                             <div class="modal-text">
                                 <p>N'hésitez pas a passer nous voir au salon</p>
-                                <p>Adresse : 13 rue du Pont des morts, Metz, 57000 </p> 
+                               <address>Adresse : 13 rue du Pont des morts Metz, 57000 </address> 
                             </div>
                         </div>
                         <hr>

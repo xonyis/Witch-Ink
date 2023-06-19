@@ -60,7 +60,7 @@ import { ref, onMounted } from 'vue';
 <style>
 
 main {
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 .menu-container{
@@ -91,7 +91,7 @@ main {
 }
 
 .galerie-container {
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-bottom: 10vh;
 }
 
