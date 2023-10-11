@@ -3,6 +3,7 @@ import { ref } from 'vue';
 
 
 import Nav from '../components/Nav.vue';
+import NavMenu from '../components/NavMenu.vue';
 import Headers from '../components/HeaderComponent.vue'
 import Reviews from '../components/ReviewsComponent.vue'
 import Footer from '../components/Footer.vue';
@@ -15,6 +16,7 @@ export default {
     Headers,
     Reviews,
     Footer,
+    NavMenu,
   }
 }
 </script>
@@ -22,7 +24,7 @@ export default {
 <template>
   <div class="app ">
     
-    <Nav></Nav>
+    <NavMenu></NavMenu>
     
     <Headers></Headers>
     <Reviews></Reviews>

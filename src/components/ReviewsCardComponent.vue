@@ -39,7 +39,6 @@ export default {
 
 .text-review span {
     font-size: .8em;
-    color: var(--coner-color);
 }
 
 .card-container h3 {

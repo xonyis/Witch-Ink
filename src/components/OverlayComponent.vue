@@ -26,7 +26,7 @@ export default {
                             </div>
                             <div class="modal-text">
                                 <p>Envie de discuter de votre prochaine création ?</p>
-                               <p>Envoyez nous un message sur <a target="_blank" href="https://www.instagram.com/witch.inktattoo/">notre instagram</a></p> 
+                               <p>Envoyez-nous un message sur <a target="_blank" href="https://www.instagram.com/witch.inktattoo/">notre Instagram.</a></p> 
                             </div>
                         </div>
                         <hr>
@@ -37,7 +37,7 @@ export default {
                                 <font-awesome-icon icon="fa-solid fa-phone"/>
                             </div>
                             <div class="modal-text">
-                                <p>Vous souhaiter plutôt échanger par téléphone ?</p>
+                                <p>Vous souhaitez plutôt échanger par téléphone ?</p>
                                 
                             </div>
                         </div>
@@ -49,7 +49,7 @@ export default {
                                 <font-awesome-icon  icon="fa-solid fa-shop" />
                             </div>
                             <div class="modal-text">
-                                <p>N'hésitez pas a passer nous voir au salon</p>
+                                <p>N'hésitez pas à passer nous voir au salon.</p>
                                <address>Adresse : 13 rue du Pont des morts Metz, 57000 </address> 
                             </div>
                         </div>

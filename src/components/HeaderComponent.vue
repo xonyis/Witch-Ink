@@ -254,6 +254,11 @@ header div {
     text-decoration: none;
     border-radius: 5px;
     text-transform: uppercase;
+    transition: all ease .5s;
+}
+
+.btn-gallerie:hover {
+    transform: scale(1.1);
 }
 
 /* HEADER */

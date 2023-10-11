@@ -26,7 +26,10 @@ export default {
                 <h3>Witch Ink Tattoo</h3>
                 <a href="">Mention Légales</a>
             </div>
-            <div class="social-container">
+            
+           
+        </div>
+        <div class="social-container">
                 <div class="social-btn">
                     <a arget="_blank" href="https://www.instagram.com/witch.inktattoo/" class="social-icon"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
                 </div>
@@ -34,8 +37,6 @@ export default {
                     <a target="_blank" href="https://www.tiktok.com/@witch.ink.tattoo" class="social-icon"><font-awesome-icon icon="fa-brands fa-tiktok" /></a>
                 </div>
             </div>
-           
-        </div>
         <div class="menu-warper">
             <ul>
                 <li class="foot-links"><a href="/">Accueil</a></li>
@@ -46,7 +47,7 @@ export default {
         </div>
         <div class="mid-warper">
             <h3>à Propos de nous</h3>
-            <p>Witch Ink Tatto, situé au centre de Metz, est un salon de tatouage qui sort de l'ordinaire. <br> Trisan, tatoueur dédié à créer des œuvres créative, uniques et significatives. Grâce a son expérience, il a su se créer une réputation solide en tant que destination de choix pour les amateurs de tatouages de qualité.</p>
+            <p>Witch Ink Tattoo, situé au centre de Metz, est un salon de tatouage qui sort de l'ordinaire. <br> Tristan, tatoueur dédié à créer des œuvres créatives, uniques et significatives.</p>
         </div>
     </div>
     <Modal @close="toggleModal" :modalActive="modalActive">
@@ -72,9 +73,11 @@ export default {
 
 .left-warper {
     width: 45%;
+    height: max-content;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 5vh;
 }
 
 .info-warper img{
@@ -100,10 +103,11 @@ export default {
 }
 
 .social-container {
-    height: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: 0 2em;
 }
 
 .social-btn {
@@ -114,6 +118,11 @@ export default {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition: all ease .5s;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
 }
 
 .social-icon {
@@ -124,7 +133,7 @@ export default {
 .menu-warper {
     display: flex;
     height: 80%;
-
+    margin-top: 2vh;
     align-items: center;
 }
 
@@ -198,8 +207,9 @@ export default {
 
 .mid-warper {
     width: 30%;
-    margin-top: 2em;
+    margin-top: 10vh;
     height: 80%;
+    height: max-content;
 }
 
 .mid-warper h3 {
@@ -212,7 +222,7 @@ export default {
 
 .mid-warper p{
     font-family: var(--pop-font);
-    width: 90%;
+    width: 100%;
 }
 
 @media screen and (max-width: 1024px){
@@ -222,15 +232,45 @@ export default {
     .menu-warper button {
         font-size: 2em;
     }
-}
 
-@media screen  and (max-width: 450px){
-    .main-warper {
-        font-size: 0.5em;
+    .mid-warper {
+        margin-top: 5vh;
     }
 
-    .menu-warper button {
-        font-size: 0.5em;
+    .left-warper {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main-warper {
+        font-size: 0.7em;
+        height: 35vh;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .social-container {
+        height: 75%;
+        margin-top: 2.5vh;
+    }
+
+    .mid-warper {
+        width: 45%;
+    }
+
+    .menu-warper {
+        position: absolute;
+        width: 100%;
+        height: 5vh;
+        margin-top: 30vh;
+    }
+
+    .menu-warper ul {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
     }
 }
 

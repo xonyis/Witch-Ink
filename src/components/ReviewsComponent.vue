@@ -81,6 +81,7 @@ export default {
   width: 100%;
   height: max-content;
   text-align: center;
+  margin-top: 2em;
 }
 
 .title-warp h2{

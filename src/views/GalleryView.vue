@@ -2,19 +2,21 @@
 import Nav from '../components/Nav.vue';
 import Footer from '../components/Footer.vue';
 import Gallery from '../components/GalleryComponent.vue'
+import NavMenu from '../components/NavMenu.vue';
 
 export default {
   name: 'gallery',
   components: {
     Nav,
     Gallery,
-    Footer
+    Footer,
+    NavMenu
   }
 }
 </script>
 <template>
     <div>
-        <Nav></Nav>
+        <NavMenu></NavMenu>
         <Gallery/>
         <Footer></Footer>
     </div>
