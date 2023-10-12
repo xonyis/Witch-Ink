@@ -2,7 +2,7 @@
 
 </script>
 <template>
-    <div>
+    <main>
         <header>
             <h1>Bienvenue sur notre page À Propos ! </h1>
         </header>
@@ -12,20 +12,12 @@
         <div class="xp-bar">
             <div class="xp-item">
                 <span><font-awesome-icon icon="fa-regular fa-circle-check" /></span>
-                <p>10 ans d'éxpériences</p>
+                <p>5 ans d'éxpériences</p>
             </div>
             <div class="xp-item">
                 
                 <span><font-awesome-icon icon="fa-solid fa-star" /></span>
                 <p>5 étoiles google</p>
-            </div>
-            <div class="xp-item">
-                <span><font-awesome-icon icon="fa-regular fa-circle-check" /></span>
-                <p>10 ans d'éxpériences</p>
-            </div>
-            <div class="xp-item">
-                <span><font-awesome-icon icon="fa-regular fa-circle-check" /></span>
-                <p>10 ans d'éxpériences</p>
             </div>
         </div>
         
@@ -40,8 +32,7 @@
         </div>
         <div class="shop-container">
             <div class="shop-bot-l">
-                <h3>Notre Histoire</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nihil modi quasi eaque sint ex nostrum architecto optio, animi, soluta sit officiis tempore atque ad est vel cumque sunt rerum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum vero aliquid sint dolor saepe, quos quis sunt cum odio, obcaecati enim, dolore amet magnam laudantium odit. Cum optio excepturi architecto.</p>
+                
             </div>
             <div class="shop-bot-r">
                 image shop
@@ -67,10 +58,9 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </main>
 </template>
 <style scoped>
-
 header {
     width: 100%;
     height: 60vh;
@@ -240,5 +230,51 @@ header h1 {
 .grid-4 li {
     font-size: 1.5em;
     font-family: var(--main-font);
+}
+
+@media screen and (max-width: 768px) {
+
+    .shop-r {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .shop-l {
+        width: 100%;
+    }
+    .shop-bot-r {
+        width: 100%;
+        border-top: 1px solid ;
+    }
+
+    .shop-bot-l {
+        display: none;
+    }
+
+    header {
+        margin-top: 0;
+    }
+
+    .shop-container {
+        flex-direction: column;
+    }
+    .grid-1 h3 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .intro-container {
+        font-size: .7em;
+    }
+
+    .shop-r, .grid-4, .grid-3 {
+        font-size: .7em;
+    }
+
+    .grid-2 {
+        font-size: .5em;
+    }
 }
 </style>

@@ -77,7 +77,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 5vh;
+    margin-top: 5vh
 }
 
 .info-warper img{
@@ -259,6 +259,9 @@ export default {
         width: 45%;
     }
 
+    .mid-warper p {
+        font-size: ;
+    }
     .menu-warper {
         position: absolute;
         width: 100%;
